@@ -1,5 +1,5 @@
 {
-  "name": "TPU MLIR Development Container",
+  "name": "YOLO Sophon BModel Exporter Devcontainer",
   "image": "sophgo/tpuc_dev:latest",
   "workspaceFolder": "/workspace",
   "runArgs": [
