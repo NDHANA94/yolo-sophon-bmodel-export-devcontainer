@@ -25,14 +25,13 @@ This repository provides a VSCode devcontainer setup for generating **YOLO BMode
 
 > **Note:** INT8 quantization is not completed successfully yet due to an error shown [here](#int8-quantization-error)
 
-
 </br>
 
 ### 🔷 Usage
 
 1. **Clone the repository:**
     ```bash
-    git clone git@github.com:NDHANA94/yolo-sophon-bmodel-export-devcontainer.git   # Replace <repository-url> with the actual URL
+    git clone git@github.com:NDHANA94/yolo-sophon-bmodel-export-devcontainer.git  
     ```
 
 2. **Open the repository in VSCode:**
