@@ -1,0 +1,19 @@
+model_name: "yolo11n"
+
+mlir_export_config:
+  img_ch_mean: [0.0, 0.0, 0.0] # Mean values for each channel (RGB)
+  img_ch_scale: [0.0039216,0.0039216,0.0039216] # 1/255.0 | Scale values for each channel (RGB)
+  keep_aspect_ratio: true # Whether to keep the aspect ratio of the input image
+  pixel_format: "rgb"     # Options: "rgb", "bgr"
+  test_input: "/workspace/tpu-mlir/regression/image/dog.jpg" # Path to a test input image for mlir export
+
+bmodel_export_config:
+  quantize: "F16" # Options: F32/BF16/F16/INT8
+  processor: "bm1684" # Options: "bm1684x", "bm1684", "bm1688", "cv186x", and "bm1690"
+  # Tolerance for the minimum similarity between MLIR quantized and MLIR fp32 inference results.
+  # Set to [-1, -1] to disable tolerance.
+  tolerance: [-1, -1]  # 0.85,0.45
+  
+calibration_config: # This must be provided for INT8 quantization
+    dataset: "/workspace/tpu-mlir/regression/dataset/COCO2017" # Path to the dataset for calibration
+    input_num: 100  # Number of images to use for calibration

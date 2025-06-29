@@ -1,0 +1,14 @@
+{
+  "name": "TPU MLIR Development Container",
+  "image": "sophgo/tpuc_dev:latest",
+  "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--privileged",
+    "-v",
+    "${localWorkspaceFolder}:/workspace"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python"
+  },
+  "postCreateCommand": "if [ ! -d /workspace/tpu-mlir ]; then git clone https://github.com/sophgo/tpu-mlir.git /workspace/tpu-mlir; fi && pip install tpu_mlir ultralytics onnx"
+}
