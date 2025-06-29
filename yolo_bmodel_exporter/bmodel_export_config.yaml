@@ -9,7 +9,7 @@ mlir_export_config:
 
 bmodel_export_config:
   quantize: "F16" # Options: F32/BF16/F16/INT8
-  processor: "bm1684" # Options: "bm1684x", "bm1684", "bm1688", "cv186x", and "bm1690"
+  processor: "bm1688" # Options: "bm1684x", "bm1684", "bm1688", "cv186x", and "bm1690"
   # Tolerance for the minimum similarity between MLIR quantized and MLIR fp32 inference results.
   # Set to [-1, -1] to disable tolerance.
   tolerance: [-1, -1]  # 0.85,0.45
