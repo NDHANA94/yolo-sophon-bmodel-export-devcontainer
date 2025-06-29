@@ -9,7 +9,7 @@ This repository provides a VSCode devcontainer setup for generating **YOLO BMode
 - Pre-configured environment for BModel generation using [tpu-mlir](https://github.com/sophgo/tpu-mlir.git)
 - Easy model conversion with [yaml configuration](yolo_bmodel_exporter/bmodel_export_config.yaml)
 - Support for various model quantizations (F32, BF16, F16, INT8)
-- Support different Sophon chips (see [Supported Chip and Quantization Options](#supported-chip-and-quantization-options))
+- Support different Sophon chips (see [Supported Chip and Quantization Options](#🔷-supported-chip-and-quantization-options))
 
 </br>
 
@@ -32,12 +32,12 @@ This repository provides a VSCode devcontainer setup for generating **YOLO BMode
 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>   # Replace <repository-url> with the actual URL
+    git clone git@github.com:NDHANA94/yolo-sophon-bmodel-export-devcontainer.git   # Replace <repository-url> with the actual URL
     ```
 
 2. **Open the repository in VSCode:**
     ```bash
-    cd <repository-name>  # Replace <repository-name> with the actual name
+    cd yolo-sophon-bmodel-export-devcontainer
     code .
     ```
 3. **Open workspace in container**
@@ -64,7 +64,7 @@ This repository provides a VSCode devcontainer setup for generating **YOLO BMode
 
 </br></br>
 
-### 📛 `INT8` Quantization Error:
+### `INT8` Quantization Error:
 
 ```bash
 ...
